@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homes.com</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <header>
+      <div>
+        <h1>Homes.com</h1>
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Homes.com</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+              "
+            >
+              <div
+                class="offcanvas-header"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  width: 100%;
+                "
+              >
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body" style="width: 100%">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/furniture.html"
+                      >Furniture</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Plans</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Locations</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br />
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        "
+      >
+        <div class="btn-group" style="width: 50%">
+          <input
+            type="search"
+            style="
+              border-radius: 2rem 0 0 2rem;
+              width: 100%;
+              padding-left: 1rem;
+              height: 3rem;
+            "
+            id=""
+            placeholder="Search"
+          />
+          <button
+            type="submit"
+            style="
+              border-radius: 0 2rem 2rem 0;
+              border: none;
+              padding-left: 0.5rem;
+              padding-right: 1rem;
+              background-color: red;
+              color: white;
+              height: 3rem;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+              style="border: 0 2rem 2rem 0"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <p>
+            Date :
+            <script>
+              document.write(new Date().toDateString());
+            </script>
+          </p>
+          <p>
+            Time :
+            <script>
+              document.write(new Date().toLocaleTimeString());
+            </script>
+          </p>
+        </div>
+      </div>
+    </header>
+    <br />
+    <main>
+      <section class="fullimg">
+        <section class="carousel">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/house1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="/house2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="/house3.JPG" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="/house4.jpeg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="/house5.jpeg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="animated-title">
+            <div class="text-top">
+              <div>
+                <span>Luxurious living</span>
+                <span>Family Bonding</span>
+              </div>
+            </div>
+            <div class="text-bottom">
+              <div>never got this easy!</div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section>
+        <div
+          style="
+            background-color: black;
+            color: white;
+            text-align: center;
+            min-height: 10rem;
+          "
+        >
+          <h2>Elevating Waterfront Living</h2>
+          <br />
+          <p>
+            This offering sits on 210 feet of prime, low-bank lake washington
+            shoreline. Featuring 1.25 private acres on mercer island's coveted
+            northe end, a sprawling long island Shingle style home, exquisitely
+            manicured grounds,epic aquatic adventures and endless beach fun
+          </p>
+          <br />
+          <br />
+          <div>
+            <button class="button">Property Video</button>
+            <button class="button">Photo gallery</button>
+          </div>
+          <br />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p style="text-align: center">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        homes.com All Rights Reserved
+      </p>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>
