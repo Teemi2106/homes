@@ -21,9 +21,8 @@ function addToCart(itemName, itemPrice) {
   updateCart();
 }
 
-function removeFromCart(index) {
-  cartItems.splice(index, i);
-  cartItems.filter((item) => item.id !== id);
+function removeFromCart(itemName, itemPrice) {
+  cartItems.splice(item, 1);
   updateCart();
 }
 
@@ -73,11 +72,9 @@ function purchaseItems() {
 
     updateCart();
     document.getElementById("userBalance").textContent = userBalance.toFixed(2);
+    alert("Purchase of " + total + " successful");
     messageDiv.textContent = "Purshase Successful";
-    alert("Purchase of " + userBalance + " by " + userName + " Successful");
   }
-  cartDiv.textContent = "";
-  return;
 }
 
 function addAmount() {
@@ -94,4 +91,5 @@ function addAmount() {
     depositAmount.toFixed(2) +
     " into your account.";
   close();
+  alert("Deposit Successful");
 }
